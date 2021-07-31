@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo element</title>
+    <style>
+        h1::before{
+            content: 'Hellow ';
+            color: rgb(53, 36, 207);
+
+        }
+        h1::after{
+            content: ' Gelo';
+            color: rgb(53, 36, 207);
+
+        }
+        h3{
+            display: inline-block;
+            
+        }
+        h3::after{
+            content: '';
+            height: 3px;
+            width: 20%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            background-color: midnightblue;
+        }
+        h3:hover::before{
+            content: '';
+            height: 3px;
+            display: block;
+            background-color: midnightblue;
+            width: 20%;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>I am comming soon</h1>
+    
+    <div style="text-align: center;" >
+        <h3>Underline by after Psudo element</h3>    
+    </div>
+</body>
+</html>
